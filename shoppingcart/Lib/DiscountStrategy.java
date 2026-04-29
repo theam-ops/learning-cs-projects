@@ -1,0 +1,12 @@
+package Lib;
+/**
+ * Interface สำหรับกลยุทธ์การคำนวณราคาสินค้า
+ */
+public interface DiscountStrategy {
+    /**
+     * คำนวณราคาสุทธืสำหรับสินค้า 1 รายการ
+     * @param item รายการสินค้าในตะกร้า
+     * @return ราคาสุทธิหลังจากใช้โปรโมชัน
+     */
+    double calculatePrice(CartItem item);
+}
